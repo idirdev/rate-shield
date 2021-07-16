@@ -1,0 +1,50 @@
+{
+  "name": "rate-shield",
+  "version": "1.0.0",
+  "description": "Advanced rate limiting middleware for Express with multiple strategies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "example:basic": "ts-node examples/basic.ts",
+    "example:advanced": "ts-node examples/advanced.ts"
+  },
+  "keywords": [
+    "rate-limit",
+    "rate-limiter",
+    "express",
+    "middleware",
+    "token-bucket",
+    "leaky-bucket",
+    "sliding-window",
+    "fixed-window",
+    "throttle",
+    "api"
+  ],
+  "author": "idirdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idirdev/rate-shield.git"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
