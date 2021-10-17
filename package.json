@@ -12,7 +12,8 @@
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build",
     "example:basic": "ts-node examples/basic.ts",
-    "example:advanced": "ts-node examples/advanced.ts"
+    "example:advanced": "ts-node examples/advanced.ts",
+    "test": "vitest run"
   },
   "keywords": [
     "rate-limit",
@@ -39,7 +40,8 @@
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^2.0.0"
   },
   "peerDependencies": {
     "express": ">=4.0.0"
