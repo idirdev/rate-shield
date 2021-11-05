@@ -33,9 +33,7 @@
     "type": "git",
     "url": "https://github.com/idirdev/rate-shield.git"
   },
-  "dependencies": {
-    "express": "^4.21.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.5",
