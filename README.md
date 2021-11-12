@@ -289,3 +289,32 @@ npx ts-node examples/advanced.ts
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+`rate-shield` est un middleware Express avancé de limitation de débit (rate limiting) avec quatre stratégies (fenêtre fixe, fenêtre glissante, token bucket, leaky bucket), des stores enfichables, des générateurs de clés personnalisés et un support complet des en-têtes `X-RateLimit-*`. Zéro dépendances hormis Express.
+
+### Installation
+```bash
+npm install rate-shield
+```
+
+### Utilisation
+```typescript
+import express from 'express';
+import { rateLimit } from 'rate-shield';
+
+const app = express();
+
+// 100 requêtes par minute par IP (fenêtre fixe)
+app.use(rateLimit({
+  strategy: 'fixed-window',
+  max: 100,
+  windowMs: 60_000,
+}));
+```
+
+Consultez la documentation anglaise ci-dessus pour la comparaison des stratégies, les options avancées et l'implémentation de stores personnalisés.
