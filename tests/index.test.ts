@@ -136,7 +136,7 @@ describe('FixedWindowStrategy', () => {
 
   it('should reset a client key', async () => {
     store = new MemoryStore();
-    const strategy = new FixedWindowStrategy(store, 2, 60000);
+    const strategy = new FixedWindowStrategy(store, 5, 60000);
 
     await strategy.consume('client-1');
     await strategy.consume('client-1');
